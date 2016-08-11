@@ -1,0 +1,113 @@
+angular.callbacks._0 (
+    {
+  "products": [
+    {
+      "cat": "jeans", 
+      "id": 1, 
+      "img": "http://lorempixel.com/292/398/fashion/", 
+      "name": "jeans 1", 
+      "price": 100, 
+      "score": 0.23483014633917532, 
+      "url": "http://www.example.com/"
+    }, 
+    {
+      "cat": "sarees", 
+      "id": 2, 
+      "img": "http://lorempixel.com/301/436/fashion/", 
+      "name": "sarees 2", 
+      "price": 200, 
+      "score": 0.44741480603923756, 
+      "url": "http://www.example.com/"
+    }, 
+    {
+      "cat": "sarees", 
+      "id": 3, 
+      "img": "http://lorempixel.com/332/356/fashion/", 
+      "name": "sarees 3", 
+      "price": 300, 
+      "score": 0.47694790592157943, 
+      "url": "http://www.example.com/"
+    }, 
+    {
+      "cat": "jeans", 
+      "id": 4, 
+      "img": "http://lorempixel.com/273/366/fashion/", 
+      "name": "pants 4", 
+      "price": 400, 
+      "score": 0.6054607650821381, 
+      "url": "http://www.example.com/"
+    },
+    {
+      "cat": "jeans", 
+      "id": 1, 
+      "img": "http://lorempixel.com/292/398/fashion/", 
+      "name": "jeans 1", 
+      "price": 500, 
+      "score": 0.23483014633917532, 
+      "url": "http://www.example.com/"
+    }, 
+    {
+      "cat": "sarees", 
+      "id": 2, 
+      "img": "http://lorempixel.com/301/436/fashion/", 
+      "name": "sarees 2", 
+      "price": 600, 
+      "score": 0.44741480603923756, 
+      "url": "http://www.example.com/"
+    }, 
+    {
+      "cat": "sarees", 
+      "id": 3, 
+      "img": "http://lorempixel.com/332/356/fashion/", 
+      "name": "sarees 3", 
+      "price": 700, 
+      "score": 0.47694790592157943, 
+      "url": "http://www.example.com/"
+    }, 
+    {
+      "cat": "jeans", 
+      "id": 4, 
+      "img": "http://lorempixel.com/273/366/fashion/", 
+      "name": "pants 4", 
+      "price": 800, 
+      "score": 0.6054607650821381, 
+      "url": "http://www.example.com/"
+    },
+    {
+      "cat": "jeans", 
+      "id": 4, 
+      "img": "http://lorempixel.com/273/366/fashion/", 
+      "name": "pants 4", 
+      "price": 900, 
+      "score": 0.6054607650821381, 
+      "url": "http://www.example.com/"
+    },
+    {
+      "cat": "sarees", 
+      "id": 3, 
+      "img": "http://lorempixel.com/332/356/fashion/", 
+      "name": "sarees 3", 
+      "price": 1000, 
+      "score": 0.47694790592157943, 
+      "url": "http://www.example.com/"
+    }, 
+    {
+      "cat": "jeans", 
+      "id": 4, 
+      "img": "http://lorempixel.com/273/366/fashion/", 
+      "name": "pants 4", 
+      "price": 1100, 
+      "score": 0.6054607650821381, 
+      "url": "http://www.example.com/"
+    },
+    {
+      "cat": "jeans", 
+      "id": 4, 
+      "img": "http://lorempixel.com/273/366/fashion/", 
+      "name": "pants 4", 
+      "price": 1200, 
+      "score": 0.6054607650821381, 
+      "url": "http://www.example.com/"
+    }
+   ]
+})

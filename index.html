@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Electronix Store</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+
+<script type="text/javascript" src="js/boxOver.js"></script>
+    <script type="text/javascript"
+		src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script   src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"   integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="   crossorigin="anonymous"></script>
+</head>
+<body ng-app="app" ng-controller="shopController">
+<div id="main_container">
+  <div id="main_content">
+    <div id="menu_tab">
+      <div class="left_menu_corner"></div>
+      <ul class="menu">
+        <li><a href="#" class="nav1"> Home</a></li>
+        <li class="divider"></li>
+        <li><a href="#" class="nav2">Products</a></li>
+        <li class="divider"></li>
+        <li><a href="#" class="nav3">Specials</a></li>
+        <li class="divider"></li>
+        <li><a href="#" class="nav4">My account</a></li>
+        <li class="divider"></li>
+        <li><a href="#" class="nav4">Sign Up</a></li>
+        <li class="divider"></li>
+        <li><a href="#" class="nav5">Shipping</a></li>
+          <li class="divider"></li> 
+        <li class="divider"></li>
+        <li class="currencies">Currencies
+          <select>
+            <option>US Dollar</option>
+            <option>Euro</option>
+          </select>
+        </li>
+      </ul>
+      <div class="right_menu_corner"></div>
+    </div>
+    <!-- end of menu tab -->
+    <div class="left_content">
+      <div class="title_box">Categories</div>
+      <ul class="left_menu">
+        <li ng-repeat="category in itemCategories" ng-class="category" class="left_menu_item" ng-click="left_menu_item($event)">
+            <a href="#">{{category | capitalize}}</a>  
+        </li>
+      </ul>
+        <div class="bottom_left_box"></div>
+        <div class="price_slider"></div>
+        <p class="price_value_holder">
+            <label for="amount">Price range:</label>
+            <input type="text" id="amount" />
+            <input type="hidden" name="min" id="minPrice" />
+            <input type="hidden" name="max" id="maxPrice" />
+        </p>
+        <div class="bottom_left_box"></div><br/>
+        <div class="shopping_cart">
+            <div class="cart_title">Shopping cart</div>
+            <div class="cart_details"> 3 items <br />
+              <span class="border_cart"></span> Total: <span class="price">350$</span> 
+            </div>
+        </div>
+        
+    </div>
+    <!-- end of left content -->
+    <div class="center_content">
+      <div class="totalItems">{{selectedItems.length}}</div>
+      <div class="prod_box" ng-repeat="selectedItem in selectedItems | startFrom:currentPage*pageSize | limitTo:pageSize" ng-class="selectedItem.id">
+        
+        <div class="top_prod_box"></div>
+        <div class="center_prod_box">
+          <div class="product_title">
+              <a href="details.html">{{selectedItem.name}}</a>
+          </div>
+          <div class="product_img">
+              <a href="details.html"><img data-ng-src="{{selectedItem.img}}" alt="" border="0" /></a>
+          </div>
+          <div class="prod_price"><span class="reduce">{{selectedItem.price}}$</span> <span class="price">{{selectedItem.price}}$</span></div>
+        </div>
+          <div class="bottom_prod_box"></div>
+       
+    </div>
+    <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+        Previous
+    </button>
+        {{currentPage+1}}/{{numberOfPages()}}
+    <button ng-disabled="currentPage >= selectedItems.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+        Next
+    </button>
+    
+  </div>
+  <!-- end of main content -->
+</body>
+</html>
